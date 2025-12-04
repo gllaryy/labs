@@ -48,9 +48,10 @@ namespace RestaurantSystem
             return _items;
         }
 
-        public override string ToString()
+        public string Output()
         {
             return $"ID: {Id} | Стіл: {TableNumber} | Статус: {Status} | Сума: {GetTotal()} грн";
         }
     }
 }
+
