@@ -58,7 +58,7 @@
             }
 
             Order order2= restaurant.CreateOrder(3);
-            Console.WriteLine($"\n---Створено замовлення для столика №{order.TableNumber}. ID = {order.Id}---");
+            Console.WriteLine($"\n---Створено замовлення для столика №{order2.TableNumber}. ID = {order2.Id}---");
             order.AddItem(restaurant.Menu[1]);
             Console.WriteLine("Додано позицію: " + restaurant.Menu[1].Name);
             order.AddItem(restaurant.Menu[5]);
@@ -102,3 +102,4 @@
       
     }
 }
+
