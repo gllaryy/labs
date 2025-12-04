@@ -67,16 +67,16 @@
             Console.WriteLine("Сума замовлення: " + order2.GetTotal() + " грн");
 
 
-            Console.WriteLine("Статус замовлення: " + order.Status);
+            Console.WriteLine("Статус замовлення: " + order2.Status);
 
             order.ChangeStatus(OrderStatus.InProgress);
-            Console.WriteLine("> Змінено статус: " + order.Status);
+            Console.WriteLine("> Змінено статус: " + order2.Status);
 
             order.ChangeStatus(OrderStatus.Ready);
-            Console.WriteLine("> Змінено статус: " + order.Status);
+            Console.WriteLine("> Змінено статус: " + order2.Status);
 
             order.ChangeStatus(OrderStatus.Paid);
-            Console.WriteLine("> Змінено статус: " + order.Status);
+            Console.WriteLine("> Змінено статус: " + order2.Status);
 
             Console.WriteLine("\n--- Напої у замовленні ---");
             foreach (var item in order.GetItems())
@@ -102,5 +102,6 @@
       
     }
 }
+
 
 
