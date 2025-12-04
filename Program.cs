@@ -59,12 +59,12 @@
 
             Order order2= restaurant.CreateOrder(3);
             Console.WriteLine($"\n---Створено замовлення для столика №{order2.TableNumber}. ID = {order2.Id}---");
-            order.AddItem(restaurant.Menu[1]);
+            order2.AddItem(restaurant.Menu[1]);
             Console.WriteLine("Додано позицію: " + restaurant.Menu[1].Name);
-            order.AddItem(restaurant.Menu[5]);
+            order2.AddItem(restaurant.Menu[5]);
             Console.WriteLine("Додано позицію: " + restaurant.Menu[5].Name);
 
-            Console.WriteLine("Сума замовлення: " + order.GetTotal() + " грн");
+            Console.WriteLine("Сума замовлення: " + order2.GetTotal() + " грн");
 
 
             Console.WriteLine("Статус замовлення: " + order.Status);
@@ -102,4 +102,5 @@
       
     }
 }
+
 
