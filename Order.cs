@@ -8,7 +8,7 @@ namespace RestaurantSystem
 {
     public class Order 
     {
-        private static int _lastorderId = 100;
+        private int _lastorderId = 100;
         public int Id { get; private set; }
         public int TableNumber { get; private set; }
         public OrderStatus Status { get; private set; }
@@ -54,4 +54,5 @@ namespace RestaurantSystem
         }
     }
 }
+
 
